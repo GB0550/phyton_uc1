@@ -75,3 +75,23 @@ produtos = (
 print("LISTA DE PRODUTOS")
 for nome, preco in produtos:
     print(f"{nome:.<20} R$ {preco:.2f}")
+
+
+produtos = (
+    ("Arroz", 5.99),
+    ("Feijão", 7.49),
+    ("Leite", 4.89),
+    ("Óleo", 9.99),
+    ("Açúcar", 3.29)
+)
+
+print("LISTA DE PRODUTOS")
+total = 0
+
+for nome, preco in produtos:
+    quantidade = int(input(f"Quantidade de {nome}comprados: "))
+    subtotal = preco * quantidade
+    total += subtotal
+    print(f"{nome:.<20} R$ {preco:.2f} x {quantidade} = R$ {subtotal:.2f}")
+
+print(f"\nTOTAL A PAGAR: R$ {total:.2f}")

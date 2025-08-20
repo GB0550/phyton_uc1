@@ -87,11 +87,22 @@ produtos = (
 
 print("LISTA DE PRODUTOS")
 total = 0
-
+"""
 for nome, preco in produtos:
-    quantidade = int(input(f"Quantidade de {nome}comprados: "))
+    quantidade = int(input(f"Quantidade de {nome}comprados3: "))
     subtotal = preco * quantidade
     total += subtotal
     print(f"{nome:.<20} R$ {preco:.2f} x {quantidade} = R$ {subtotal:.2f}")
 
-print(f"\nTOTAL A PAGAR: R$ {total:.2f}")
+print(f"\nTOTAL A PAGAR: R$ {total:.2f}") """
+
+import random
+
+numeros = [random.randint(1, 1000) for _ in range(100)]
+print(f"Números gerados: {numeros}")
+
+media = sum(numeros) / len(numeros)
+print(f"Média: {media}")
+
+acima_da_media = [n for n in numeros if n > media]
+print(f"Números acima da média: {acima_da_media}")

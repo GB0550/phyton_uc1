@@ -12,3 +12,5 @@ for i in range(4):
         if matriz[i][j] % 2 == 0:
          par += 1
 print(f"Quantidade de números pares: {par}")
+
+#possibilidade de usar import random ao invez de utilizar o input 

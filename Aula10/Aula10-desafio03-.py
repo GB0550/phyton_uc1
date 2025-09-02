@@ -9,6 +9,6 @@ for linha in matriz:
     print(linha)
 num = int(input("Digite o número para multiplicação: "))
 resultado = matriz * num
-    print(f"A multiplicação é: ")
+print(f"A multiplicação é: ")
 
     #não finalizado
